@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Appointment Details"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <RelativeLayout
+            android:id="@+id/rlDOctor"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Date"
+             android:gravity="center"
+            android:id="@+id/StringDate"
+             android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:id="@+id/tvDoctor"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/StringDate"
+                android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlTime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rlDOctor">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tiime"
+                android:gravity="center"
+                android:id="@+id/Stringtime"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="time"
+                android:id="@+id/tvTime"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/Stringtime"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rlTime">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Query"
+                android:gravity="center"
+                android:id="@+id/StringQuery"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Query"
+                android:id="@+id/tvQuery"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/StringQuery"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@+id/rlQuery"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="CANCEL"
+                android:gravity="center"
+                android:textSize="15dp"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
